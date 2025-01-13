@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1496905380771-5d847a07ef5b?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg4MnwwfDF8c2VhY2h8OXx8fHdlYXRoZXJ8ZW58MHx8fHwxNjkzMjY1NTg5&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 350px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 15px;
+    width: 80%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    background-color: #e67e22;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+
+.weather-info {
+    display: none;
+    margin-top: 20px;
+}
+
+#weather-info h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+#temperature {
+    font-size: 22px;
+}
+
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#icon {
+    width: 80px;
+    margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 80%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
